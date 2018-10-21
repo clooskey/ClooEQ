@@ -1,0 +1,31 @@
+--- SKRYPTY: 
+clooeq.m - skrypt uruchamiaj¹cy g³ówne okno GUI oraz skrypty:
+    defaults.m - predefinicja domyœlnych wartoœci zmiennych;
+    iopanel.m - inicjalizacja przycisków;
+    axxes.m - inicjalizacja wykresu;
+    filter_# - inicjalizacja kontrolek poszczególnych filtrów;
+
+Skrypty wywo³ywane przez przyciski:
+|---------------|---------------------|
+|    SKRYPT     |       PRZYCISK      |
+|---------------|---------------------|
+|  fileload.m   | Load an audio file  |
+|  apply.m      | Apply               |
+|  export.m     | Export current      |
+|  exportlast.m | Export previous     |
+|  current.m    | Play: current       |
+|  last.m       | Play: previous      |
+|_______________|_____________________|
+
+
+--- FUNKCJE:
+
+filters - generuj¹ca wypadkowy wektor odpowiedzi
+          czêstotliwoœciowej filtrów
+
+butt_filter - wykorzystywana w funkcji 'filters', 
+              a zwracaj¹ca wektor opowiedzi 
+              czêstotliwoœciowej jednego filtru
+
+filterState - interpretuj¹ca po³o¿enie prze³¹czników
+              w³¹czaj¹cych filtry. 
